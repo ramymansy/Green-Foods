@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Green Foods</title>
+  </head>
+  <body>
+    <div class="container">
+      <header id="navbar">
+        <a href="#" class="logo">Green<span>Foods</span> </a>
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+        <span class="menuIcon" onclick="menuToggle();"></span>
+      </header>
+      <div class="content">
+        <div class="bannerText" id="slideshowText">
+          <div class="active">
+            <h2>
+              EAT Healthy<br />
+              Stay Healthy
+            </h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta
+              consectetur explicabo rerum. Sapiente et quod quae nam voluptates
+              assumenda excepturi sed hic optio neque officiis rerum, cupiditate
+              delectus iste non.
+            </p>
+            <a href="#">Read More</a>
+          </div>
+          <div>
+            <h2>
+              EAT Your<br />
+              Viggies
+            </h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta
+              consectetur explicabo rerum. Sapiente et quod quae nam voluptates
+              assumenda excepturi sed hic optio neque officiis rerum, cupiditate
+              delectus iste non.
+            </p>
+            <a href="#">Read More</a>
+          </div>
+          <div>
+            <h2>
+              Good Food<br />
+              Good Mood
+            </h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta
+              consectetur explicabo rerum. Sapiente et quod quae nam voluptates
+              assumenda excepturi sed hic optio neque officiis rerum, cupiditate
+              delectus iste non.
+            </p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+        <div class="bannerImg" id="slideshow">
+          <img src="images/img1.png" alt="" class="active" />
+          <img src="images/img2.jpg" alt="" />
+          <img src="images/img3.jpg" alt="" />
+        </div>
+      </div>
+      <div class="icons">
+        <ul class="social">
+          <li>
+            <a href="#"><img src="images/001-facebook-logo.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/002-twitter.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/003-instagram.png" alt="" /></a>
+          </li>
+        </ul>
+        <ul class="controls">
+          <li>
+            <a href="#"
+              ><img
+                src="images/left.png"
+                alt=""
+                onclick="prevSlide(); prevSlideText();"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="images/right.png"
+                alt=""
+                onclick="nextSlide(); nextSlideText();"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
